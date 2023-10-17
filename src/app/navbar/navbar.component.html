@@ -4,6 +4,6 @@
     <div class="links">
         <a class="button" [routerLink]="['/calendario']"><img class="button-image" [src]="calendar"/></a>
         <a class="button" [routerLink]="['/mensagem']"><img class="button-image" [src]="message"/></a>
-        <a class="name" [routerLink]="['/login']">Olá {{name}}</a>
+        <a class="name" (click)="logout()">Olá {{name}}</a>
     </div>
 </div>

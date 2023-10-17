@@ -45,4 +45,5 @@ button{
     margin: 0 1em;
     color: rgba(142, 3, 174);
     text-decoration: none;
+    cursor: pointer;
 }
