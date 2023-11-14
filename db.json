@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "lihfalcao",
+      "password": "abc123",
+      "name": "Ligia"
+    },
+    {
+      "username": "teste",
+      "password": "teste",
+      "passwordRepeat": "teste",
+      "id": 2
+    },
+    {
+      "username": "teste2",
+      "password": "teste",
+      "passwordRepeat": "teste",
+      "id": 3
+    },
+    {
+      "username": "teste3",
+      "password": "teste1",
+      "passwordRepeat": "teste1",
+      "id": 4
+    },
+    {
+      "username": "abcd1",
+      "password": "abcd1",
+      "passwordRepeat": "abcd1",
+      "id": 5
+    }
+  ]
+}

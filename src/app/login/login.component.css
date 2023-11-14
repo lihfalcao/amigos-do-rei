@@ -1,3 +1,28 @@
-.login{
-    height: 79.6vh;
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Fredoka:wght@600&family=Satisfy&family=Shalimar&display=swap');
+
+
+.loginContainer{
+    background-color: #f9be0e7c;
+    height: 25em;
+    width: 20em;
+    border-radius: 24px;
+}
+
+.loginContainer mat-form-field {
+    z-index: 2;
+}
+
+button{
+    background-color: #41C4FC;
+    border: 1px solid #43b7e9;
+    font-size: large;
+}
+
+button:hover{
+    background-color: #308ab0;
+}
+
+.kids{
+    max-width: 100%;
 }
