@@ -12,13 +12,13 @@
         <div style="margin-top: 2em;">
             <div class="info">
                 <div class="retangulo-interno">
-
+                    <img [src]="'../../assets/images/comming-soon.png'" alt="comming-soon" style="width: 30em; overflow: hidden"/>
                 </div>
             </div>
         </div>
         <div style="margin-top: 2em;">
             <div class="info2">
-                <div class="retangulo-interno">
+                <div class="retangulo-interno" style=" overflow-y: auto;">
                     <h1 style="color: #FE6DAB">Últimas Aulas</h1>
                     <hr>
                     <div *ngFor="let event of events">
@@ -27,8 +27,8 @@
                         <button style="float:right;" 
                         class="btn btn-info text-white" 
                         [routerLink]="['/aula', event.themeId]">Ver mais</button>
+                        <hr style=" width: 10em; margin: auto; margin-top: 5em;">
                     </div>
-                    <hr style=" width: 10em; margin: auto; margin-top: 5em;">
                 </div>
             </div>
         </div>
