@@ -1,3 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.mat-mdc-form-field-has-icon-suffix .mat-mdc-text-field-wrapper {
+    background-color: white !important;
+}
