@@ -4,6 +4,10 @@ Develope of a biblical studies for kids for Frontend Frameworks Course using Ang
 ## Prototype
 [Figma Protótipo](https://www.figma.com/file/IZ8axwzLxRQq4HrbjIuDlk/Amigos-do-Rei?type=design&node-id=903%3A21&mode=design&t=x8KTfcT8u2m8bZeb-1)
 
+## Deploy
+[Pages](https://lihfalcao.github.io/amigos-do-rei/login)
+
+
 ## Checklist
 
 ### RA1 - Prototipar e projetar interfaces gráficas de usuário, considerando princípios de usabilidade e experiência do usuário.
