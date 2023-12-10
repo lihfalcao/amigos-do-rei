@@ -48,3 +48,7 @@ Develope of a biblical studies for kids for Frontend Frameworks Course using Ang
 - [x] ID25: Criar repositório no GitHub utilizando a estrutura do Gitflow.
 - [x] ID26: Colaborar efetivamente com outros membros do projeto, realizando fusões (merges) e resolução de conflitos de código de forma adequada.
 
+## Comandos para Iniciar Aplicação
+- ng serve
+- json-server --watch db.json
+
