@@ -2,8 +2,14 @@
     <button [routerLink]="['/']"><img class="logo" [src]="logo"/></button>
 
     <div class="links">
-        <a class="button" [routerLink]="['/calendario']"><img class="button-image" [src]="calendar"/></a>
-        <a class="button" [routerLink]="['/mensagem']"><img class="button-image" [src]="message"/></a>
-        <a class="name" (click)="logout()">Olá {{name}}</a>
+        <a class="button" [ngClass]="{'selected': actualPage == 'calendar' }" [routerLink]="['/calendario']"><img class="button-image" [src]="calendar"/></a>
+        <a class="button" (click)="redirecionarParaWhatsApp()"><img class="button-image" [src]="message"/></a>
+        <div class="dropdown">
+            <button class="dropbtn">Olá {{data.username}} <span>&#9662;</span></button>
+            <div class="dropdown-content">
+                <a (click)="verPerfil()">Ver Perfil</a>
+                <a (click)="logout()">Logout</a>
+            </div>
+        </div>
     </div>
 </div>

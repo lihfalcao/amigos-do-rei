@@ -6,6 +6,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
+import { MatMomentDateModule, MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
+import { MomentDateAdapter, MAT_MOMENT_DATE_FORMATS } from '@angular/material-moment-adapter';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,9 +20,21 @@ import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CalendarComponent } from './calendar/calendar.component';
-import { MessageComponent } from './message/message.component';
-import { UserService } from './login/user.service';
-import { LoginService } from './login/login.service';
+import { UserService } from './services/user.service';
+import { LoginService } from './services/login.service';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { CalendarService } from './services/calendar.service';
+import { EventService } from './services/event.service';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { ClassComponent } from './class/class.component';
+import { MyProfileComponent } from './my-profile/my-profile.component';
+import { PhoneFormatPipe } from './pipes/phone-format.pipe';
+import { ProfessorService } from './services/professor.service';
+import { AddCalendarComponent } from './calendar/add-calendar/add-calendar.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import {MatSelectModule} from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -30,7 +46,10 @@ import { LoginService } from './login/login.service';
     FooterComponent,
     NavbarComponent,
     CalendarComponent,
-    MessageComponent
+    ClassComponent,
+    MyProfileComponent,
+    PhoneFormatPipe,
+    AddCalendarComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,8 +61,20 @@ import { LoginService } from './login/login.service';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    FullCalendarModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatSnackBarModule
   ],
-  providers: [UserService,LoginService],
+  providers: [UserService,LoginService, CalendarService, EventService, ProfessorService,
+    { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' }, // ou outro local
+    // Adaptação para o formato Moment, se você estiver usando Moment.js
+    { provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE, MAT_MOMENT_DATE_ADAPTER_OPTIONS] },
+    { provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

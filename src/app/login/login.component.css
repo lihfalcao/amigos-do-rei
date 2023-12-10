@@ -26,3 +26,16 @@ button:hover{
 .kids{
     max-width: 100%;
 }
+
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: white !important;
+}
+
+.color-green{
+    color:green;
+}
+
+.color-red{
+    color:darkred;
+}

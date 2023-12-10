@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UserService } from './user.service';
-import { LoginService } from './login.service';
+import { UserService } from '../services/user.service';
+import { LoginService } from '../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +13,11 @@ export class LoginComponent {
 
   loginForm: any = FormGroup;
   wrong: boolean = false;
-  logo:any = ""
-  kids:any = ""
+  logo:any = "";
+  kids:any = "";
+  showPassword = false;
+  passwordInputType = 'password';
+  passwordIcon = 'visibility';
 
   constructor(private formBuilder: FormBuilder,
     private router: Router,
@@ -30,7 +33,7 @@ export class LoginComponent {
 
 
       this.loginForm = new FormGroup({
-        username: new FormControl('', [Validators.required]),
+        username: new FormControl('', [Validators.required, Validators.minLength(5)]),
         password: new FormControl('', [Validators.required]),
     });
   }
@@ -43,6 +46,14 @@ export class LoginComponent {
   register(){
     this.router.navigate(["/registrar"]);
   }
+
+  toggleVisibility() {
+    const currentIcon = this.showPassword ? 'visibility' : 'visibility_off';
+    this.showPassword = !this.showPassword;
+    this.passwordInputType = this.showPassword ? 'text' : 'password';
+    this.passwordIcon = currentIcon;
+  }
+  
 
   submit(data:any) {
     this.wrong = false;

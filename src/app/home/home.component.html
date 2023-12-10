@@ -1,5 +1,39 @@
-<app-navbar [name]="'Maria'" [actualPage]="'home'"></app-navbar>
+<app-navbar [actualPage]="'home'"></app-navbar>
 <div class="home">
-    <p>home works!</p>
+    <div class="container">
+        <div>
+            <div class="menu-container" (click)="abrirMenu()"></div>
+        </div>
+        <div style="width:2em; margin-top: 2em;">
+            <div class="retangulo retangulo1">
+                <p style="font-size: 30px; font-weight: bold; margin-top: 10px; 
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                    {{ event.date | date: 'dd/MM/yyyy' }}
+                </p>
+            </div>
+            <div class="retangulo retangulo2">
+                <p style="font-size: 30px; font-weight: bold; margin-top: 10px; 
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                    {{ event.className }}
+                </p>
+            </div>
+            <div class="retangulo retangulo3">
+                <p style="font-size: 30px; font-weight: bold; margin-top: 10px; 
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                    {{ event.themeName }}
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="info">
+                <div class="retangulo-interno">
+                    <div [innerHTML]="event.themeResume"></div>
+                    <button style="float:right; margin-top: -37px;" 
+                    class="btn btn-info text-white" 
+                    [routerLink]="['/aula', event.themeId]">Ver mais</button>
+                </div>
+            </div>
+        </div>
+      </div>
 </div>
 <app-footer></app-footer>

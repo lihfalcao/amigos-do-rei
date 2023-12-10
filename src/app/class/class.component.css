@@ -11,34 +11,11 @@
     padding: 20px
   }
   
-  .retangulo {
-    width: 15em;
-    height: 7.5em;
-    margin-bottom: 2em;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
-  
-  .retangulo1 {
-    background-color: #41C4FC;
-  }
-  
-  .retangulo2 {
-    background-color: #8EECBF;
-  }
-  
-  .retangulo3 {
-    background-color: #FE6BAB;
-  }
-  
   .info {
     position: relative;
-    width: 35em;
+    width:50em;
     height: 30em;
+    margin: auto;
     margin-bottom: 1em;
     border-radius: 20px;
     background-color: rgba(141, 78, 218, 0.30);
@@ -54,6 +31,7 @@
     border-radius: 15px;
     padding: 20px;
     text-align: center;
+    overflow-y: auto;
 }
 
 .menu-container {

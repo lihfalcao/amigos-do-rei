@@ -1,0 +1,37 @@
+<app-navbar [actualPage]="'home'"></app-navbar>
+<div class="home">
+    <div class="container">
+        <div style="width: 15em;" >
+            <div class="menu-container"></div>
+            <div class="about" *ngIf="professor">
+                <p>{{professor.name}}</p>
+                <p style="margin-top: -1.5em; font-size: small;">Professora {{professor.className}}
+                <br>{{professor.email}} - {{professor.phone ? (professor.phone | phoneFormat) : ''}}</p>
+            </div>
+        </div>
+        <div style="margin-top: 2em;">
+            <div class="info">
+                <div class="retangulo-interno">
+
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 2em;">
+            <div class="info2">
+                <div class="retangulo-interno">
+                    <h1 style="color: #FE6DAB">Últimas Aulas</h1>
+                    <hr>
+                    <div *ngFor="let event of events">
+                        <p>( <b>{{event.date | date: 'dd/MM/yyyy' }}</b> )</p>
+                        <p style="margin-top: -1em; font-size: small;">{{event.themeName | uppercase}}</p>
+                        <button style="float:right;" 
+                        class="btn btn-info text-white" 
+                        [routerLink]="['/aula', event.themeId]">Ver mais</button>
+                    </div>
+                    <hr style=" width: 10em; margin: auto; margin-top: 5em;">
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+<app-footer></app-footer>

@@ -1,8 +1,7 @@
 export interface User{
-
-    id: number
-    name: string
+    id: number,
     username: string,
-    password: string
+    password: string,
+    professorId: number
 
 }

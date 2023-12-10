@@ -1,0 +1,17 @@
+<app-navbar [actualPage]="'class'"></app-navbar>
+<div class="home">
+    <div class="container">
+        <div>
+            <div class="menu-container" (click)="abrirMenu()"></div>
+        </div>
+        <div class="info">
+            <div class="retangulo-interno">
+                <div [innerHTML]="theme.content"></div>
+            </div>
+            <button style="float:right; margin-top: 30.5em;"
+                    class="btn btn-warning text-white" 
+                    (click)="goBack()">Voltar</button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

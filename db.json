@@ -4,31 +4,247 @@
       "id": 1,
       "username": "lihfalcao",
       "password": "abc123",
-      "name": "Ligia"
+      "name": "Lígia",
+      "professorId": 7
+    }
+  ],
+  "professors": [
+    {
+      "id": 1,
+      "name": "Berna",
+      "email": "berna@gmail.com",
+      "phone": "42912345678",
+      "classId": 1
     },
     {
-      "username": "teste",
-      "password": "teste",
-      "passwordRepeat": "teste",
-      "id": 2
+      "id": 2,
+      "name": "Rebeca",
+      "email": "rebeca@gmail.com",
+      "phone": "42912345679",
+      "classId": 2
     },
     {
-      "username": "teste2",
-      "password": "teste",
-      "passwordRepeat": "teste",
-      "id": 3
+      "id": 3,
+      "name": "Sara Maia",
+      "email": "saramaia@gmail.com",
+      "phone": "42912345680",
+      "classId": 3
     },
     {
-      "username": "teste3",
-      "password": "teste1",
-      "passwordRepeat": "teste1",
+      "id": 4,
+      "name": "Elinara",
+      "email": "elinara@gmail.com",
+      "phone": "42912345681",
+      "classId": 4
+    },
+    {
+      "id": 5,
+      "name": "Dani",
+      "email": "dani@gmail.com",
+      "phone": "42912345682",
+      "classId": 5
+    },
+    {
+      "id": 6,
+      "name": "Lorena",
+      "email": "lorena@gmail.com",
+      "phone": "42912345683",
+      "classId": 1
+    },
+    {
+      "id": 7,
+      "name": "Lígia",
+      "email": "ligia@gmail.com",
+      "phone": "42912345684",
+      "classId": 2
+    },
+    {
+      "id": 8,
+      "name": "Sara Durau",
+      "email": "saradurau@gmail.com",
+      "phone": "42912345685",
+      "classId": 3
+    },
+    {
+      "id": 9,
+      "name": "Juliana",
+      "email": "juliana@gmail.com",
+      "phone": "42912345686",
+      "classId": 4
+    },
+    {
+      "id": 10,
+      "name": "Mari",
+      "email": "mari@gmail.com",
+      "phone": "42912345687",
+      "classId": 5
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "Louvor",
+      "color": "#41C4FC"
+    },
+    {
+      "id": 2,
+      "name": "Babies",
+      "color": "#FE6BAB"
+    },
+    {
+      "id": 3,
+      "name": "Primario",
+      "color": "#6ace9e"
+    },
+    {
+      "id": 4,
+      "name": "Juniores",
+      "color": "#F9C00D"
+    },
+    {
+      "id": 5,
+      "name": "Pre-Adolescentes",
+      "color": "#8C4EDA"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "classId": 1,
+      "themeId": 1,
+      "professorId": 1,
+      "date": "2023-12-03"
+    },
+    {
+      "id": 2,
+      "classId": 2,
+      "themeId": 1,
+      "professorId": 7,
+      "date": "2023-12-03"
+    },
+    {
+      "id": 3,
+      "classId": 3,
+      "themeId": 1,
+      "professorId": 8,
+      "date": "2023-12-03"
+    },
+    {
+      "id": 4,
+      "classId": 4,
+      "themeId": 1,
+      "professorId": 9,
+      "date": "2023-12-03"
+    },
+    {
+      "id": 5,
+      "classId": 5,
+      "themeId": 1,
+      "professorId": 5,
+      "date": "2023-12-03"
+    },
+    {
+      "id": 6,
+      "classId": 1,
+      "themeId": 2,
+      "professorId": 6,
+      "date": "2023-12-10"
+    },
+    {
+      "id": 7,
+      "classId": 2,
+      "themeId": 2,
+      "professorId": 2,
+      "date": "2023-12-10"
+    },
+    {
+      "id": 8,
+      "classId": 3,
+      "themeId": 2,
+      "professorId": 3,
+      "date": "2023-12-10"
+    },
+    {
+      "id": 9,
+      "classId": 4,
+      "themeId": 2,
+      "professorId": 4,
+      "date": "2023-12-10"
+    },
+    {
+      "id": 10,
+      "classId": 5,
+      "themeId": 2,
+      "professorId": 5,
+      "date": "2023-12-10"
+    },
+    {
+      "id": 11,
+      "classId": 1,
+      "themeId": 3,
+      "professorId": 1,
+      "date": "2023-12-17"
+    },
+    {
+      "id": 12,
+      "classId": 2,
+      "themeId": 3,
+      "professorId": 7,
+      "date": "2023-12-17"
+    },
+    {
+      "id": 13,
+      "classId": 3,
+      "themeId": 3,
+      "professorId": 8,
+      "date": "2023-12-17"
+    },
+    {
+      "id": 14,
+      "classId": 4,
+      "themeId": 3,
+      "professorId": 9,
+      "date": "2023-12-17"
+    },
+    {
+      "id": 14,
+      "classId": 5,
+      "themeId": 3,
+      "professorId": 10,
+      "date": "2023-12-17"
+    },
+    {
+      "date": "2023-12-24",
+      "professorId": 2,
+      "classId": 2,
+      "themeId": 4,
+      "id": 15
+    }
+  ],
+  "themes": [
+    {
+      "id": 1,
+      "themeName": "Natal 1 - A árvore perfeita",
+      "content": "<h1>A Árvore Genealógica Perfeita</h1><br><p>Há muitos anos, em Belém, havia uma família muito especial. Não era uma família qualquer; era a família onde Jesus nasceria. E essa família tinha uma história que começou a muito tempo atrás.</p><p>Tudo começou com um homem chamado Abraão. Deus fez uma grande promessa a Abraão. Deus disse que ele teria uma família enorme, e eles seriam abençoados. Com o tempo, essa família cresceu, e algumas pessoas incríveis fizeram parte dela.</p><p>Havia também um jovem pastor chamado Davi que se tornou um grande rei. Ele amava a Deus de todo o coração. E adivinha o que aconteceu? Deus prometeu a Davi que um de seus descendentes seria um rei especial que reinaria para sempre. Essa era uma promessa sobre Jesus!</p><p>Mas a família de Jesus não foi feita apenas de reis. Havia pessoas inesperadas também, como Raabe, que vivia em Jericó, uma cidade que seria destruída, mas, por confiar em Deus, tornou-se parte da árvore genealógica de Jesus.</p><p>Outra pessoa que fez parte da linhagem de Jesus se chamava Rute, que veio de uma terra diferente, mas escolheu seguir a Deus. Ela era gentil e amável e se tornou bisavó do rei Davi.</p><p>A árvore genealógica de Jesus tinha todos os tipos de pessoas. Alguns eram reis, mas a maioria eram pessoas comuns. Alguns tinham histórias impressionantes, e outros tinham origens humildes. Mas cada pessoa foi escolhida por Deus por uma razão.</p><p>E então, no momento perfeito, numa cidadezinha chamada Belém, dessa família especial, Jesus nasceu. Aquele que Deus havia prometido estava finalmente aqui.</p><p>Mas aqui está a parte realmente emocionante para nós. Jesus quer que façamos parte de Sua família! Não importa de onde viemos ou qual é a nossa história. Jesus nos convida a entrar na família de Deus, tornando cada um de nós especial aos Seus olhos.</p><p>Quando pensamos em famílias, ramos e raízes profundas, é importante lembrar da árvore genealógica de Jesus e que todos nós podemos fazer parte da família de Deus por meio Dele.</p>",
+      "resume": "<h1>História: A Árvore Genealógica Perfeita</h1><br><p>A história narra a trajetória da árvore genealógica de Jesus, começando com Abraão e destacando figuras como Davi, Raabe e Rute. Essa linhagem inclui tanto reis quanto pessoas comuns, todos escolhidos por Deus por razões específicas. O ápice da narrativa é o nascimento de Jesus em Belém, cumprindo as promessas divinas. O convite de Jesus para que todos façam parte de Sua família, independentemente de suas origens, é o cerne da mensagem. A analogia de famílias, ramos e raízes destaca a inclusividade da árvore genealógica de Jesus e a oportunidade para todos se unirem à família de Deus por meio Dele.</p>"
+    },
+    {
+      "id": 2,
+      "themeName": "Natal 2 - O perfeito lugar",
+      "content": "<h1>História: O Perfeito Lugar</h1><p>Em um mundo cheio de reinos poderosos, palácios espetaculares e cidades movimentadas, havia uma pequena cidade chamada Belém. Aninhada entre colinas ondulantes, Belém era uma cidade tranquila, com estreitas estradas de terra, casas de pedra construídas próximas umas das outras e campos pontilhados de ovelhas e pastores. Era um lugar onde todos se conheciam, e a vida era simples.</p><p>Não era o lugar mais grandioso ou o mais famoso, mas tinha um lugar especial nos planos de Deus. Esta cidade foi escolhida por Deus para ser o local de nascimento do maior Rei que já nasceu.</p><p>Profecias de muito tempo atrás falavam de uma criança especial que nasceria em Belém, e quando o tempo se aproximou, Maria e José viajaram para esta cidade. Mal sabiam eles que estavam entrando no coração de um plano divino.</p><p>Bem longe, no leste, um grupo de sábios, os Magos, avistou uma estrela brilhante no céu. Não era uma estrela qualquer. Era um sinal. Um novo rei havia nascido! Eles arrumaram seus tesouros e partiram em uma longa jornada para homenagear este Rei que acabara de nascer. Sua jornada os levou por muitas terras e finalmente os levou ao grande palácio do rei Herodes em Jerusalém. Afinal, onde mais você esperaria encontrar um novo rei senão em um palácio real?</p><p>Mas, para sua surpresa, o palácio não tinha nenhum bebê rei. Intrigados, perguntaram ao rei Herodes, que lhes contou a profecia.</p><p>Guiados pela estrela, os Magos continuaram sua busca, e isso os levou não a outro palácio esplêndido, mas a uma casa humilde em Belém. Lá, em meio a ambientes comuns, encontraram Jesus. Era o lugar perfeito que Deus havia escolhido.</p><p>Belém ensinou ao mundo uma profunda lição naquele dia. Os planos de Deus muitas vezes não são o que esperamos. Nem sempre ele escolhe os lugares mais grandiosos ou as pessoas mais poderosas. Em vez disso, Deus muitas vezes opera através dos humildes e do ordinário. O rei de todos os reis não nasceu em um palácio luxuoso cercado por guardas reais, mas em uma cidade modesta, no calor de uma simples manjedoura.</p><p>Lembra-nos a todos que Deus olha para além das aparências. Ele valoriza um coração humilde. Assim como Ele escolheu Belém, para trazer à luz o Salvador, Ele busca aqueles com coração humilde para fazer parte de Sua grande história. E assim como os Magos, quando O buscamos de todo o coração, não importa de onde viemos ou quem somos, certamente O encontraremos.</p>",
+      "resume": "<h1>História: O Perfeito Lugar</h1><p>A história narra o nascimento do maior Rei em uma cidade modesta chamada Belém, destacando sua simplicidade em meio a reinos poderosos. Profecias antigas previram esse evento, levando Maria e José à cidade. Os Magos, guiados por uma estrela, buscaram o novo Rei, mas surpreendentemente, encontraram-no em uma humilde casa em Belém, não em um palácio real. Essa escolha enfatiza que Deus opera através do humilde e do ordinário, não necessariamente nos lugares grandiosos. O nascimento ocorreu em uma simples manjedoura, ensinando que Deus valoriza o coração humilde. A história destaca que, assim como Belém foi escolhida para trazer o Salvador ao mundo, Deus procura aqueles com coração humilde para participar de Sua grande história, independentemente de origens ou identidades.<p>"
+    },
+    {
+      "id": 3,
+      "themeName": "Natal 3 - A Perfeita Luz",
+      "content": "<h1>História: A Perfeita Luz</h1><p>Vamos voltar no tempo e voltar ao início de todas as coisas. Imagine um mundo sem forma e vazio. Um mundo completamente encoberto de trevas. Mas então, em um momento, Deus declarou: 'Haja luz!' E, de repente, as trevas se espalharam como luz radiante derramada em todos os cantos da terra. Esse foi o primeiro presente da luz de Deus para o nosso mundo.</p><p>No entanto, com o tempo, outro tipo de escuridão começou a se insinuar. Não o tipo que você vê à noite, mas o pecado, um tipo mais profundo de escuridão que lança uma sombra sobre o coração das pessoas. Uma escuridão de erros, pecados, medos e dúvidas. Muitos se sentiam perdidos e sozinhos, ansiando por uma luz para guiá-los.</p><p>O profeta Isaías escreveu: 'O povo que andava em trevas viu uma grande luz, e sobre os que habitavam na região da sombra de morte resplandeceu a luz' (Isaías 9:2). Isaías também profetizou: 'Levanta-te, resplandece, porque a tua luz chegou, e a glória do Senhor vai nascendo sobre ti' (Isaías 60:1-3). E assim nasceu uma esperança para essa luz milagrosa.</p><p>Então, numa noite silenciosa em Belém, sob as estrelas cintilantes, nasceu Jesus, a Luz do Mundo. Sua cama era uma humilde manjedoura. No entanto, Seu brilho era muito mais deslumbrante do que o sol. Ele brilhou cheio de esperança, amor e promessa de salvação.</p><p>Mas algumas pessoas realmente preferiam a escuridão porque ela escondia suas ações erradas. Tinham medo do que a luz revelaria. No entanto, para aqueles dispostos a andar na luz, Jesus iluminou um caminho de perdão, amor e verdade.</p><p>À medida que Jesus crescia, Sua luz brilhava mais. Seus ensinamentos eram como raios de sol de pura sabedoria. Seus milagres e bondade como luzes brilhantes que iluminam a noite. Ele chamou a todos para sair das sombras e abraçar a luz.</p><p>E então, um dia, Jesus olhou para Seus seguidores e disse algo notável: 'Vocês são a luz do mundo'. Ele não estava apenas falando com eles; Ele está falando com todos nós! Ele quer que reflitamos Sua luz compartilhando bondade, ajudando os outros e espalhando a palavra sobre Seu amor.</p>",
+      "resume": "<h1>História: A Perfeita Luz</h1><p>Na história 'A Perfeita Luz', Deus cria a luz no início de todas as coisas, dissipando as trevas. Com o tempo, uma escuridão mais profunda, representada pelo pecado, aflige as pessoas, deixando-as perdidas e ansiando por orientação. O profeta Isaías profetiza sobre a chegada de uma grande luz, simbolizando esperança. Jesus nasce em Belém como a Luz do Mundo, irradiando esperança, amor e promessas de salvação. Apesar de alguns preferirem a escuridão para esconder seus erros, Jesus oferece um caminho de perdão, amor e verdade. À medida que Ele cresce, Sua luz brilha mais, chamando todos para sair das sombras e abraçar a luz. Jesus declara que Seus seguidores são a luz do mundo, incentivando a partilha de bondade e a propagação do amor divino.</p>"
+    },
+    {
+      "themeName": "Teste",
+      "content": "Teste",
+      "resume": "Teste",
       "id": 4
-    },
-    {
-      "username": "abcd1",
-      "password": "abcd1",
-      "passwordRepeat": "abcd1",
-      "id": 5
     }
   ]
 }
